@@ -1,0 +1,61 @@
+body {
+  background-color: white;
+}
+
+.accordian {
+  max-width: 600px;
+  margin: 100px auto;
+}
+
+.accordian-item {
+  background-color: #adaaca;
+  padding: 8px 20px;
+  margin: 1.2rem;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.accordian-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.accordian-header h4 {
+    font-size: 1.4rem;
+    letter-spacing: 0.5px;
+    color: #242657
+}
+
+.accordian-button {
+    background-color: #242657;
+    height: 2rem;
+    width: 2.2rem;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+    transition: transform 0.4s, background-color 0.4s;
+}
+
+.accordian-content {
+    font-size: 1rem;
+    opacity: 0.8;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.5px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s;
+}
+
+.active .accordian-content {
+    max-height: 400px;
+
+}
+
+.active .accordian-button {
+    transform: rotate(-180deg);
+    background-color: rgb(255, 0, 0);
+}
